@@ -127,7 +127,8 @@ void ResampleCurve(const vector<double>& curvex, const vector<double>& curvey,
 				   int N,
 				   bool isOpen
 				   ) {
-	assert(curvex.size()>0 && curvey.size()>0 && curvex.size()==curvey.size());
+	assert(curvex.size()>0 && curvey.size()>0);
+	assert(curvex.size()==curvey.size());
 	
 	vector<Point2d> resamplepl(N); resamplepl[0].x = curvex[0]; resamplepl[0].y = curvey[0];
 	vector<Point2i> pl; PolyLineMerge(pl,curvex,curvey);

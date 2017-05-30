@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+. activate py3
+
+mkdir -p .bld; cd .bld
+cmake -DCMAKE_INSTALL_PREFIX=$(pwd)/.. ..
+make -j || exit 1
+
+LD_LIBRARY_PATH=$CONDA_PREFIX/lib ./MatchTwoCurves '../shark-silhouette-inv.png'
+

@@ -1,6 +1,3 @@
-.DS_Store
-build/
-
 # Compiled Object files
 *.slo
 *.lo
@@ -9,6 +6,7 @@ build/
 # Compiled Dynamic libraries
 *.so
 *.dylib
+*.bld
 
 # Compiled Static libraries
 *.lai

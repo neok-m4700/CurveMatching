@@ -44,7 +44,7 @@ void open_imgs_dir(const char* dir_name, std::vector<std::string>& images_names)
 vector<string> open_dir(const char* dir_name, const char* filter);
 vector<string> open_dir(const char* dir_name, std::vector<std::string>& filter);
 
-#include "/usr/local/include/eigen3/Eigen/Eigen"
+#include "/home/tb/opt/conda3/envs/py3/include/eigen3/Eigen/Eigen"
 
 template<typename T1,typename T2>
 inline bool sortbyfirst (pair<T1,T2> i,pair<T1,T2> j) { return (i.first<j.first); }
